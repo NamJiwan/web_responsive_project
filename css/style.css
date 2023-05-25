@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #111 !important;
+  text-decoration: none !important;
+}
+/* 해더 */
+
+video {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#main_logo {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  transition: all 0.5s;  
+}
+
+nav {
+  height: 80px;
+  position: relative;
+}
+
+.nav_btn {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  width: 80%;
+  max-width: 1280px;
+  color: #111;
+  margin: 0 auto;
+  display: flex;
+  /* grid-template-columns: repeat(5, 1fr); */
+  justify-content: space-between;
+  padding: 20px;
+}
+ul li {
+  font-size: 1.3em;
+}
+ul li a.member_btn {
+  margin-top: 20px;
+  background: #00a5b1;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.main_title {
+  position: absolute;
+  top: 150px;
+  font-size: 4.5rem;
+  color: #ddd;
+  z-index: 2;
+  left: 20%;
+  transition: all 1s;
+}
+
+/* main */
+/* 부트스트랩 카드 */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section{
+  width: 90%;
+  
+  margin:20px 0 ;
+  padding: 20px;
+}
+main section h2{
+  margin: 20px 0;
+}
+main section article{  
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 30%;
+  margin: 5px;
+}
+.card-body{
+  text-align: center;
+}
+/* 캐러셀 */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main #carouselExampleDark {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#carouselExampleDark {
+  margin: 0 auto;
+  width: 90%;
+}
+#carouselExampleDark::before{
+  content: '';  
+  position: absolute;
+  width:225%;
+  height: 110%;
+  top: -20px;
+  left: -100%;
+  background: rgba(0, 117, 126, 0.562);
+}
+/* 그리드 */
+.item_grid {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  padding: 12px;
+  overflow: hidden;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(11, 80px);
+  grid-template-areas:
+    "a a a a a a b b b b b b"
+    "a a a a a a b b b b b b"
+    "c c c d d d b b b b b b"
+    "c c c d d d b b b b b b"
+    "c c c d d d b b b b b b"
+    "c c c d d d f f f f f f"
+    "e e e e e e f f f f f f"
+    "e e e e e e f f f f f f"
+    "e e e e e e f f f f f f"
+    "e e e e e e f f f f f f"
+    "e e e e e e f f f f f f";
+}
+.item_grid{
+  margin: 50px 0;
+}
+.over1 {
+  grid-area: a;
+  overflow: hidden;
+}
+.over2 {
+  grid-area: b;
+  overflow: hidden;
+}
+.over3 {
+  grid-area: c;
+  overflow: hidden;
+}
+.over4 {
+  grid-area: d;
+  overflow: hidden;
+}
+.over5 {
+  grid-area: e;
+  overflow: hidden;
+}
+.over6 {
+  grid-area: f;
+  overflow: hidden;
+}
+.item {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.item:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.item1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+}
+.item2 {
+  /* grid-area: b; */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-size: cover;
+  background-position: center;
+}
+.item3 {
+  /* grid-area: c; */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMDA1MjVfMzYg/MDAxNTkwMzgzMDkxODQ5.lQQoO-yYG7Cx3p0u8-NXgSNKDqobNalFdRre1HERR9Qg.zUZ1u663gQCQQ3E0qbPuHB8oQaIAlOWVI8NFsWYumrEg.JPEG.ldk914/SE-b3984b37-f9c2-4c91-8f53-82f0fab90563.jpg?type=w800");
+  background-size: cover;
+  background-position: center;
+}
+.item4 {
+  /* grid-area: d; */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://d12zq4w4guyljn.cloudfront.net/750_750_20220327214030_photo2_78a11e8b5b06.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.item5 {
+  /* grid-area: e; */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://emmaru.com/matzip/include/pics/2020/01/27/m_81450A000606_6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.item6 {
+  /* grid-area: f; */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMjA5MTRfMzMg/MDAxNjYzMDk2MjIxMDI5.gAppKJWf6UWtS9ZXSb48QEZ-9eo6BWdGr6i-73ZaWHsg.9Txz9i-x5CFl0g3J4OeJmsDs9VkLIhx88OyYX-702Wkg.PNG.ggomi1105/image.png?type=w800");
+  background-size: cover;
+  background-position: center;
+}
+
+/* 푸터 */
+footer {
+  margin-top: 20px;
+  background-color: #0f3d33;
+  color: #fff;
+}
+
+footer .wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+footer #sns {
+  margin-top: 50px ;
+  display: flex;
+}
+footer #sns a {
+  margin-right: 29px;
+}
+
+@media screen and (min-width: 768px) {
+  footer .wrapper {
+    display: flex;
+  }
+
+  footer #contact {
+    flex: 2;
+  }
+  footer #sns {
+    /* display: flex;
+        justify-content: flex-end; */
+    margin:50px 0 0 50px;
+    text-align: right;
+    flex: 1;
+  }
+  footer #sns a:last-child {
+    margin-right: 0;
+  }
+}
+
+/* 사이드 메뉴 */
+#side {
+  position: relative;
+}
+#side article {
+  position: absolute;
+  position: fixed;
+  display: flex;
+  top: 300px;
+  left: -100px;
+}
+#ad {
+  width: 100px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: rgba(200, 200, 200, 0.5);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#ad img {
+  width: 50%;
+}
+#side_btn {
+  margin-top: 50px;
+  width: 30px;
+  height: 100px;
+  border-radius: 0 20px 20px 0;
+  background-color: #ddd;
+  opacity: 0.7;
+  z-index: 999;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: 600;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  #main_logo {
+    top: 18px;
+    left: 90%;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .nav_btn {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 30px;
+  }
+  .fa-solid {
+    font-size: 2em;
+  }
+  .nav_ul.active {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+    height: auto;
+    z-index: 111;
+    transition: all 0.5s;
+  }
+  .nav_ul.active li {
+    margin: 10px 0;
+    border-bottom: 1px dashed rgba(200, 200, 200, 0.8);
+  }
+
+  .main_title {
+    font-size: 2rem;
+    top: 200px;
+    left: 5%;
+  }
+  .item_grid {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+    height: 300px;
+  }
+}

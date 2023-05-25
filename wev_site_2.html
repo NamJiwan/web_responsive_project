@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그리드를 활용한 연습</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- 제이쿼리스크립트 링크 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 폰트어썸 링크 스크립트 -->
+    <script
+      src="https://kit.fontawesome.com/1821147619.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 부트스트랩 링크 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+        <img id="main_logo" src="./images/dblogo.png" alt="" />
+        <div class="nav_btn"><i class="fa-solid fa-bars fa-lg"></i></div>
+        <ul class="nav_ul">
+          <li><a href="#">DEABONG</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">STORE</a></li>
+          <li><a href="#">MEMBERSHIP</a></li>
+          <li><a href="#">RESERVE</a></li>
+          <li><a href="#" class="member_btn">가맹문의</a></li>
+        </ul>
+      </nav>
+      <div class="header_video">
+        <video muted autoplay loop id="videos">
+          <source src="./bg.mp4" type="video/mp4" />
+        </video>
+        <strong class="main_title"
+          >도심속 솦속 카페<br />
+          <strong id="main_name">대봉정</strong>
+        </strong>
+      </div>
+    </header>
+    <main>
+      <!-- 사이드 -->
+      <div id="side">
+        <article>
+          <div id="ad">
+            <img src="./images/ins.png" alt="" />
+            <img src="./images/face.png" alt="" />
+            <img src="./images/talk.png" alt="" />
+          </div>
+          <div id="side_btn">OPEN</div>
+        </article>
+      </div>
+      <!-- 부트스트랩 카드 -->
+      <section>
+        <h2>추천 메뉴</h2>
+        <article>
+          <div class="card" style="width: 18rem">
+            <img
+              src="http://www.caffebene.co.kr/uploads/product/20210413434533.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">자몽 에이드</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="http://www.caffebene.co.kr/uploads/product/20200614802613.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">레몬 에이드</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="http://www.caffebene.co.kr/uploads/product/20200607223476.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">아인 슈페너</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- 캐러셀 -->
+      <h2>카페 이미지</h2>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide container"
+        data-bs-ride="carousel"
+      >
+      
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FKVIlF%2FbtrnR5jA9vD%2FmpPkXjQnrYVr4TXzN2Ki60%2Fimg.jpg"
+              class="d-block vw-100 container"
+              height="400px"
+              alt="..."
+            />            
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpXMjs%2FbtrnGIKvqH0%2FHBeqffTyUbElT39o3hTTEk%2Fimg.jpg"
+              class="d-block vw-100 container"
+              height="400px"
+              alt="..."
+            />
+            
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdsx3Lp%2FbtrnPKN8AWZ%2FzGFAFyOzKGC6yIXyqnQWKK%2Fimg.jpg"
+              class="d-block vw-100 container"
+              height="400px"
+              alt="..."
+            />
+            
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- 그리드 -->
+      <h2>갤러리</h2>
+      <div class="item_grid">
+        <div class="over over1"><div class="item item1"></div></div>
+        <div class="over over2"><div class="item item2"></div></div>
+        <div class="over over3"><div class="item item3"></div></div>
+        <div class="over over4"><div class="item item4"></div></div>
+        <div class="over over5"><div class="item item5"></div></div>
+        <div class="over over6"><div class="item item6"></div></div>
+        <!-- <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div> -->
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <article id="contact">
+          <p>대구 광역시 중구 대봉동 732 - 2 / 대표 : 정OO</p>
+          <p>사업자등록번호 : 429-85-ㅁㅁㅁㅁㅁ</p>
+          <p>전화 : 0507 - 1455 3424</p>
+          <p>이메일 : ddanzit22 @ naver.com</p>
+        </article>
+        <article id="sns">
+          <a href="#"><img src="./images/fb.png" alt="" /></a>
+          <a href="#"><img src="./images/tw.png" alt="" /></a>
+          <a href="#"><img src="./images/ytube.png" alt="" /></a>
+          <a href="#"><img src="./images/gp.png" alt="" /></a>
+        </article>
+      </div>
+    </footer> 
+    <script>
+      // 비디오 속도 조절
+      let vi = document.getElementById("videos");      
+      function setPlaySpeed() {
+        vi.defaultPlaybackRate = 0.8;
+        vi.load();
+      }
+      setPlaySpeed();
+
+      $(() => {
+        // $('.nav_ul').hide();
+        $(".nav_btn").on("click", function () {
+          $(".nav_ul").toggleClass("active");
+          // if ($(".nav_ul").hasClass("active")) {
+          //   $(".nav_ul").stop().animate({ display: "block" }, 3000);
+          // } else {
+          //   $(".nav_ul").stop().animate({ display: "none" }, 3000);
+          // }
+          // $("nav ul").slideToggle();
+        });
+        $("#side_btn").on("click", function () {
+          $("#ad").toggleClass("active");
+          // $("#side article")
+          //   .stop()
+          //   .animate({ left: 0 }, 300)
+          //   .animate({ opacity: 1 }, 300);
+          if ($("#ad").hasClass("active")) {
+            $("#side article")
+              .stop()
+              .animate({ left: 0 }, 300)
+              .animate({ opacity: 1 }, 300);
+          } else {
+            $("#side article")
+              .stop()
+              .animate({ left: "-100px" }, 300)
+              .animate({ opacity: 0.7 }, 300);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
